@@ -9,7 +9,7 @@
 
 **Members:**
 
-- Name and surname (Student ID)
+- Enrique Luciano Ticona Medrano 47881
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
