@@ -42,8 +42,20 @@ function fibonacci(number) {
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
+    <script type = "text/javascript">
+    var catn1 = 5;
+    var catn2 = 6;
+    var suma = catn1 + catn2;
+    var resta = catn1 - catn2;
+    var multi = catn1 * catn2;
+    var div = catn1/catn2;
 
-    //Write your code here
+    alert suma;
+    alert resta;
+    alert multi;
+    alert div;
+
+</script>
     return eval(expression);
 }
 
