@@ -46,6 +46,7 @@ function fibonacci(number) {
 // Returns an integer value
 function evaluation(expression) {
    eval(expression);
+}
  
 if(typeof process === 'object') {
     module.exports =  {
