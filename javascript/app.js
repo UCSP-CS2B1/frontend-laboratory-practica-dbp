@@ -46,80 +46,104 @@ function fibonacci(number) {
 // Returns an integer value
 function evaluation(expression) {
 
-  
-    division=cadena.split('÷');
-    adiv=division[0];
-    mult1=adiv.split("*");
-    amult=1;
-
-    for(i=0; i<mult1.length; i++){  
-      sumar = mult1[i].split('+');
-      restar = sumar[0].split('-');
-      res1 = restar[0];
-
-      for(j = 1; j<restar.length; j++){
-        res1 = res1-restar[j];
-      }
-      sum1 = res1;
-
-      for(j = 1; j<sumar.length; j++){
-          restar = sumar[j].split('-');
-          res1 = restar[0];
-          for(k = 1; k<restar.length; k++){
-            res1 = res1-restar[k];
-          }
-        sum1=sum1*1+res1*1;
-      }
-      amult=amult*sum1;
-    }
-    adiv=amult;
-
-    for(i=1; i<division.length; i++){
-      adivn=division[i];
-      multn=adivn.split("*");
-      sumar=multn[0].split('+');
+    // if (!isNaN(expression)){
+    //   return expression;
+    // }
+    // else{
       
-      restar=sumar[0].split('-');
-      res1=restar[0];
-
-      for(j=1; j<restar.length; j++){
-        res1=res1-restar[j];
-      }
-      sumn=res1;
-
-      for(h=1; h<sumar.length; h++){
-          restar=sumar[h].split('-');
-          res1=restar[0];
-          for(k=1; k<restar.length; k++){
-            res1=res1-restar[k];
-          }
-        sumn=sumn+res1*1;
-      }
-      adiv=adiv/sumn;
-
-      for(j=1; j<multn.length; j++){
+    //   let ultimoParentesisAbrir = 0;
+    //   let primerParentesisCerrar = 0;
+    //   // parentesis
+    //   for (let i = 0; i < expression.length; i++){
         
-        sumar=multn[i].split('+');
-        restar=sumar[0].split('-');
-          res1=restar[0];
+    //     if (expression[i] == "("){
+    //       ultimoParentesisAbrir = i;
 
-          for(k=1; k<restar.length; k++){
-            res1=res1-restar[k];
-          }
-          sumn=res1;
+    //     }
+    //     else if(expression[i] == ")"){
+            
+    //         primerParentesisCerrar = i;
+    //         break;
+    //     }
+    //   }
+
+    //   // console.log(ultimoParentesisAbrir + " " + primerParentesisCerrar);
+    //   let operaciones = ["*", "/","+", "-"];
+    //   let iOperaciones = [];
+    //   if (ultimoParentesisAbrir != primerParentesisCerrar){
         
-        for(h=1; h<sumar.length; h++){
-            restar=sumar[h].split('-');
-            res1=restar[0];
+    //     ultimoParentesisAbrir+=2;
 
-            for(k=1; k<restar.length; k++){
-              res1=res1-restar[k];
-            }
-          sumn=sumn*1+res1*1;
-        }
-        adiv=adiv*sumn;
-      }
-    }
+    //     for (let i = ultimoParentesisAbrir; i < primerParentesisCerrar - 1; i++){
+          
+    //       for (let j = 0; j < operaciones.length; j++){
+    //         if(expression[i] == operaciones[j]){
+    //           iOperaciones.push(i);
+    //         }
+    //       }
+    //     }
+        
+
+    //     let i_ = iOperaciones[0] - 1, j_ = iOperaciones[0]+1;
+        
+    //     for (i_; i_ > -1; i_--){
+          
+    //       if (i_ != 1 || i_ != 2 || i_ != 3 || i_ != 4 || i_ != 5 || i_ != 6 || i_ != 7 || i_ != 8 || i_ != 9 || i_ != 0){
+    //         break;
+            
+    //       }
+    //     }
+        
+    //     i_++;
+        
+    //     for (j_; j_ < expression.length; j_++){
+          
+    //       if (j_ != 1 || j_ != 2 || j_ != 3 || j_ != 4 || j_ != 5 || j_ != 6 || j_ != 7 || j_ != 8 || j_ != 9 || j_ != 0){
+
+    //           break;
+    //       }
+    //     }
+    //     j_--;
+        
+    //     let expression1 = expression.substring(0, i_ - 1);
+    //     let expression2 = expression.substring(j_ + 2);
+
+    //     if (expression[iOperaciones[0]] == "*"){
+
+    //       let resultado = (expression.substring(i_, iOperaciones[0] - 1)* 1) * (expression.substring(iOperaciones[0] + 1, j_ +1)* 1);
+    //       // encontrar numeros
+    //       expression = expression1 + resultado + expression2;
+
+    //     }
+        
+
+    //     for (let i = 0; i < expression.length; i++){
+    //       if (expression[i] == "("){
+    //         ultimoParentesisAbrir = i;
+    //       }
+    //       else if (expression[i] == ")"){
+    //         primerParentesisCerrar = i;
+    //         break;
+    //       }
+    //       else if (!(expression[i] != "+" && expression[i] != "-" && expression[i] != "*" && expression[i] != "/" )){
+
+    //           return evaluation(expression);
+    //       }
+    //     }
+        
+    //     expression = expression.substring(0,ultimoParentesisAbrir) + expression.substring(ultimoParentesisAbrir+1,primerParentesisCerrar) + expression.substring(primerParentesisCerrar+1);
+      
+    //     return evaluation(expression);
+    //     return 1;
+
+    //   }
+    //   else{
+    //     expression = "(" + expression + ")";        
+    //     return evaluation(expression);
+
+    //   }
+    // }
+    return eval(expression);
 }
 
 if(typeof process === 'object') {
@@ -130,3 +154,5 @@ if(typeof process === 'object') {
         evaluation
     };
 }
+
+console.log(evaluation("7*2"));
