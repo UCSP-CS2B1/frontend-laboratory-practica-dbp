@@ -32,6 +32,7 @@ header{
   height: 100%;
 
 }
+
 h1{
     font-family: Poppins;
     font-size: 40px;
@@ -80,6 +81,7 @@ li#main{
 a{
   text-decoration: none;
   color: rgba(230, 230, 230, .9);
+  /* word-wrap: break-word; */
 }
   
 #boton{
@@ -106,6 +108,7 @@ a{
 /*-------------------FIN Header y sidebar---------------------*/
 
 /*------------------------ALGORITHM---------------------------*/
+
 .algorithm-container{
     width: 100%;
     height: 100%;
@@ -121,9 +124,10 @@ article{
     background-color:#E0EBEA;
     width: 40%;
     height: 350px;
-    margin: 5% 3%; 
-    box-sizing: content-box;
+    margin: 1% 4%; 
+    box-sizing: border-box;
     border-radius: 15px;
+
 }   
 
 button{
@@ -152,24 +156,31 @@ input,button {
 
 .algorithm-container h3, .algorithm-container p{
 
-    margin-top: 5%;
+    margin-top: 4%;
     box-sizing: border-box;
 }
 
 input{
     padding-left: 5%;
     padding-right: 5%;
+    border: 1px solid black;
+    font-size: 1em;
 }
 
-input::selection{
-    border: 1px solid #017294;
+input:focus{
+    border: 3px solid #2fa1c3;
+    outline: none;
 }
-button:active, button:focus{
+button:active{
     border: none;
     text-decoration: none;
+    background-color:#555454;
+    color: #161616; 
+    font-weight: bold;
 
 }
 /*---------------------FIN DE ALGORITHM--------------------*/
+
 /*--------------------ESTILOS DE PERFILES------------------*/
 .perfiles{
     width: 100%;
@@ -229,6 +240,9 @@ button:active, button:focus{
         width: 25%;
         color: red;
     }
+    article{
+        width: 40%;
+    }   
     .footer{
         height: 100%;
     }
@@ -245,12 +259,14 @@ button:active, button:focus{
        font-size: 15px;
     }
 
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 160px){
+    article{
+        width: 100%;
+        height: 18em; 
+    }   
 
 }
-/*
-@media(min-width:1600px){
 
-
-
-
-}*/

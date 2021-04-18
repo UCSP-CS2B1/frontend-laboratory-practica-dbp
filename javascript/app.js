@@ -45,7 +45,8 @@ function fibonacci(number) {
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
-    cadena = document.getElementById('calc').value;
+
+  
     division=cadena.split('÷');
     adiv=division[0];
     mult1=adiv.split("*");
@@ -119,10 +120,7 @@ function evaluation(expression) {
         adiv=adiv*sumn;
       }
     }
-    document.getElementById('calc').value=adiv;
-  }
 }
-
 
 if(typeof process === 'object') {
     module.exports =  {
