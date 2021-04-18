@@ -70,3 +70,24 @@ a{
   text-align: center;
   font-size: 40px;
 }
+
+
+
+/* // algorithm */
+
+button{
+    background-color: #a909da;
+    color: white;
+    cursor: pointer;
+    border: none;   
+}
+input,button {
+    border-radius: 3px;
+}
+
+input::selection{
+    border: 1px solid #017294;
+}
+button::selection{
+    border: none;
+}
