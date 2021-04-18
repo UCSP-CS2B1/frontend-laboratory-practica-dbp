@@ -157,36 +157,28 @@ a{
 /*----ESTILOS RESPONSIVE---*/
 
 
-
 @media(min-width:768px){
 
-    .perfiles__columna{
-       
-        width: 25%;
-        color: red;
+    .perfil__nombre{
+        font-size: 30px;
     }
-    .footer{
-        height: 100%;
+    .copy{
+        font-size: 25px;
     }
-
 
 }
 
 @media(min-width:1024px){
-    
-    
+  
+
+
+}
+
+@media(min-width:1600px){
+
     .footer{
-       margin-top: 480px;
-       margin-bottom: 0px;
-       font-size: 15px;
+        margin-top: 890px;
     }
 
 
 }
-/*
-@media(min-width:1600px){
-
-
-
-
-}*/
