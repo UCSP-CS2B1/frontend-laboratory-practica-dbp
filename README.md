@@ -11,7 +11,7 @@
 
 - Enrique Luciano Ticona Medrano  201-10-47881
 - Aarón Misash Apaza Coaquira 201-10-48240
-- Name and surname (Student ID)
+- Fernando Jair Peralta Bustamante 201-10-49049
 - Brigham Cáceres Gutierrez (201-10-01-47974)
 
 ---

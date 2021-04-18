@@ -14,6 +14,7 @@ img{
 }
 
 body{
+    position: relative;
     margin:0;
     font-family: Poppins, sans-serif;
 }
@@ -41,16 +42,16 @@ h1{
     color:#E0EBEA;
 }
 
-/*#todo {
+#todo {
   width: 100%;
-  height: 100%;
+  height: 89.4%;
 }
 
 #todo.active {
   width: 85%;
   margin-left: 15%;
   transition: all 500ms linear;
-}*/
+}
 
 #sidebar {
   position: absolute;
@@ -156,8 +157,12 @@ input,button {
 
 .algorithm-container h3, .algorithm-container p{
 
-    margin-top: 4%;
+    margin-top: 2em;
     box-sizing: border-box;
+}
+
+button + p{
+    margin-top: 2em !important;
 }
 
 input{
@@ -196,7 +201,7 @@ button:active{
 .perfiles__columna{
    
    
-    background-color:#E0EBEA;
+    background-color:#c1c9c9;
     width: 500px;
     height: 400px;
     margin: 10px;
@@ -220,8 +225,7 @@ button:active{
 
 .footer{
 
-    background: black;
-    border-radius: 3px;
+    background: #25292c;
     color: white;
     padding: 10px;
     text-align: center;
@@ -232,41 +236,30 @@ button:active{
 /*----ESTILOS RESPONSIVE---*/
 
 
-
 @media(min-width:768px){
 
-    .perfiles__columna{
-       
-        width: 25%;
-        color: red;
+    .perfil__nombre{
+        font-size: 30px;
     }
-    article{
-        width: 40%;
-    }   
     .footer{
         height: 100%;
     }
+    .copy{
+        font-size: 25px;
 
-
-}
-
-@media(min-width:1024px){
-    
-    
-    .footer{
-       margin-top: 480px;
-       margin-bottom: 0px;
-       font-size: 15px;
     }
 
 }
 
+@media(min-width:1600px){
+
+    .footer{
+        margin-top: 890px;
+    }
+}
 
 @media only screen and (max-width: 768px) and (min-width: 160px){
     article{
-        width: 100%;
-        height: 18em; 
+        width: 100%; 
     }   
-
 }
-
