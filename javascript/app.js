@@ -119,8 +119,6 @@ function evaluation(expression) {
       }
     }
   }
-}
-
 
 if(typeof process === 'object') {
     module.exports =  {
