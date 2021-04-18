@@ -45,7 +45,6 @@ function fibonacci(number) {
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
-    cadena = document.getElementById('calc').value;
     division=cadena.split('÷');
     adiv=division[0];
     mult1=adiv.split("*");
