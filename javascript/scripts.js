@@ -3,6 +3,8 @@
 function sort(){
 
     var sortVal = document.getElementById("text-sort").value;
+    if (sortVal == "")
+        return;
     var list = sortVal.split(",");
     var result = insertion_sort(list);
     document.getElementById("result-sort").innerHTML = result;
@@ -13,8 +15,10 @@ document.getElementById("button-sort").addEventListener("click", sort);
 function fact(){
 
     var factVal = document.getElementById("number-fact").value;
-    var result = factorial(factVal);
-    document.getElementById("result-fact").innerHTML = result;
+    if (factVal >= 1 && factVal <= 6){
+        var result = factorial(factVal);
+        document.getElementById("result-fact").innerHTML = result;
+    }
 }
 
 document.getElementById("button-fact").addEventListener("click", fact);

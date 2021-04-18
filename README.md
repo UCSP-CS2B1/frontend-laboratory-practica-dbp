@@ -10,8 +10,7 @@
 **Members:**
 
 - Enrique Luciano Ticona Medrano  201-10-47881
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- Aarón Misash Apaza Coaquira 201-10-48240
 - Name and surname (Student ID)
 - Brigham Cáceres Gutierrez (201-10-01-47974)
 
