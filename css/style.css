@@ -26,7 +26,7 @@ h1{
 
 
 #sidebar {
-  position: fixed;
+  position: absolute;
   width: 15%;
   height: 100%;
   background: rgb(21, 23, 25);
@@ -58,14 +58,15 @@ a{
   
 #sidebar .toggle-btn {
   position: absolute;
-  left: 230px;
-  top: 20px;
+  left: 107%;
+  top: 1%;
   cursor: pointer;
+  color: #E0EBEA;
 }
   
 #sidebar .toggle-btn span {
   display: block;
   width: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
