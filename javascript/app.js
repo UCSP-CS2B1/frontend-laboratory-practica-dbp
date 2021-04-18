@@ -119,7 +119,6 @@ function evaluation(expression) {
         adiv=adiv*sumn;
       }
     }
-    document.getElementById('calc').value=adiv;
   }
 }
 
