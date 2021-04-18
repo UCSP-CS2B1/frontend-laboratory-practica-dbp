@@ -6,7 +6,7 @@ function insertion_sort(numbers) {
     for (let i = 0; i < numbers.length; i++){
         for (let j = i; j > 0; j--){
             
-            if (numbers[j] < numbers[j - 1]){
+            if (numbers[j]*1 < numbers[j - 1]*1){
                 let temp = numbers[j];
                 numbers[j] = numbers[j-1];
                 numbers[j-1] = temp;
