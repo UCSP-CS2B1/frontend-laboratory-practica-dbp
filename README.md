@@ -1,19 +1,20 @@
 ## Laboratory Activity
 
-**Grade** -
+**Grade** 19
 
-- (5pts) Layout
-- (5pts) CSS 
-- (5pts) Javascript methods
-- (5pts) Responsiveness
+- (5/5pts) Layout
+- (5/5pts) CSS 
+- (4/5pts) Javascript methods
+- (5/5pts) Responsiveness
+
+Awesome!
 
 **Members:**
 
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- Enrique Luciano Ticona Medrano  201-10-47881
+- Aarón Misash Apaza Coaquira 201-10-48240
+- Fernando Jair Peralta Bustamante 201-10-49049
+- Brigham Cáceres Gutierrez (201-10-01-47974)
 
 ---
 
